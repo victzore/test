@@ -1,0 +1,30 @@
+/*
+	==================================================
+	Workshop #2 (Part-1):
+	==================================================
+	Name   : Victor Tran
+	ID     : 032281131
+	Email  : vtran18@myseneca.ca
+	Section: IPC144NDD
+*/
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+	double dollar; // Stating Variable
+	int toonies;
+	int loonies;
+	int quarters;
+
+		printf("Coin Conversion\n-----------\n"); // Displaying Title with underline
+
+	printf("Enter dollars and cents amount to convert to coins: $");  //Display money conversion input
+	scanf("%lf", &dollar);
+
+	toonies = dollar / 2;
+	dollar = dollar - (toonies * 2);
+	printf("$2.00 Toonies x %d (Remaining: $%.2lf)\n"), toonies, dollar;
+	return 0;
+}
